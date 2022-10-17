@@ -14,10 +14,11 @@ starterMode2.style.display = "none"
 //console.log(playerOneNum.length)
 playerOneNum.style.display = "flex"
 playerTwoNum.style.display = "flex"
+let theWinnerIs = document.querySelector(".header-title h1");
 if (playerOneRandom > playerTwoRandom){
-    console.log("Plyer one won");
+    theWinnerIs.innerText = "ربح اللاعب الأول";
 }else if (playerOneRandom < playerTwoRandom){
-    console.log("Player two won");
+    theWinnerIs.innerText = "ربح اللاعب الثاني";
 }else{
-    console.log("it is a tie");
+    theWinnerIs.innerText = "ما أحد يزعل تعادل"
 }

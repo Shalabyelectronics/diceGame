@@ -34,6 +34,7 @@ header{
 .dicee-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .player-one, .player-two{
     display: flex;
