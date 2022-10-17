@@ -17,11 +17,15 @@ header{
     align-items: center;
     background-color: #C8FFD4;
     padding: 20px;
-    gap:20px
+    gap:20px;
+    flex:1 1 auto;
+    flex-wrap: wrap;
 }
+
 .header-title h1{
     font-size: 50px;
     color: #5A8F7B;
+    text-align: center;
 }
 /*players names*/
 .player-names{
@@ -34,7 +38,7 @@ header{
 .dicee-container{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 .player-one, .player-two{
     display: flex;
@@ -45,6 +49,12 @@ header{
     margin: 30px;
     border-radius: 25px;
     background-color: #411530;
+}
+.p1-block h2{
+    text-align: center;
+}
+.p2-block h2{
+    text-align: center;
 }
 .dot{
     width: 45px;
