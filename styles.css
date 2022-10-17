@@ -1,0 +1,170 @@
+*{
+    /*border: 3px solid red;*/
+}
+body{
+    margin: 0;
+    font-family: 'Lemonada', cursive;
+    background-color: #FDFDBD;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C8FFD4;
+    padding: 20px;
+    gap:20px
+}
+.header-title h1{
+    font-size: 50px;
+    color: #5A8F7B;
+}
+/*players names*/
+.player-names{
+    display:flex;
+    justify-content: center;
+    gap:150px;
+    color:#B93160;
+}
+/*dicee container*/
+.dicee-container{
+    display: flex;
+    justify-content: center;
+}
+.player-one, .player-two{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    min-width: 250px;
+    border: 2px solid black;
+    margin: 30px;
+    border-radius: 25px;
+    background-color: #411530;
+}
+.dot{
+    width: 45px;
+    height: 45px;
+    border-radius: 180px;
+    border: 2px solid black;
+    background-color: #EEEEEE;
+    margin: 12px;
+}
+.group-dots{
+    display: flex;
+    flex-direction: column;
+    height: 246px;
+    justify-content: space-between;
+}
+.n-two-2{
+    align-self: flex-end;
+}
+.n-three-2{
+    align-self: center;
+}
+.n-three-3{
+    align-self: flex-end;
+}
+.n-five-3{
+    align-self: center;
+}
+/*player one dice*/
+.p1-num-one{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.p1-num-two{
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+}
+
+.p1-num-three{
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+}
+
+.p1-num-four{
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+}
+
+.p1-num-five{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+}
+
+.p1-num-six{
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+}
+/* Player two dice */
+.p2-num-one{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.p2-num-two{
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+}
+
+.p2-num-three{
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+}
+
+.p2-num-four{
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+}
+
+.p2-num-five{
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+}
+
+.p2-num-six{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: bold;
+    
+}
+footer p a{
+    text-decoration: none;
+    color: #674747;
+}
