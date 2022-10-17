@@ -71,6 +71,13 @@ header{
 .n-five-3{
     align-self: center;
 }
+.starter-mode {
+    display: flex;
+}
+.starter-mode img{
+    height: 246px;
+    width: 246px;
+}
 /*player one dice*/
 .p1-num-one{
     display: none;
@@ -101,7 +108,7 @@ header{
 }
 
 .p1-num-five{
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: flex-start;
     height: 250px;
@@ -150,7 +157,7 @@ header{
 }
 
 .p2-num-six{
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: flex-start;
     height: 250px;
