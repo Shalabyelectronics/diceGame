@@ -2,23 +2,39 @@ function randomNumber(){
     let random= Math.floor(Math.random() * 6)+1;
     return random;
 }
+let temp = []
+
+document.querySelector(".start-btn").addEventListener("click",function (){
+document.querySelectorAll(".starter-mode")[0].style.setProperty("display","none");
+document.querySelectorAll(".starter-mode")[1].style.setProperty("display","none");
 let playerOneRandom = randomNumber() - 1;
 let playerTwoRandom = randomNumber() - 1;
-let playerOneNum = document.querySelectorAll(".p1-num")[playerOneRandom];
-let playerTwoNum = document.querySelectorAll(".p2-num")[playerTwoRandom];
-let starterMode1 = document.querySelectorAll(".starter-mode")[0];
-let starterMode2 = document.querySelectorAll(".starter-mode")[1];
-starterMode1.style.display = "none"
-starterMode2.style.display = "none"
-//console.log(randomNumber())
-//console.log(playerOneNum.length)
-playerOneNum.style.display = "flex"
-playerTwoNum.style.display = "flex"
+document.querySelectorAll(".p1-num")[playerOneRandom].style.setProperty("display","flex");
+document.querySelectorAll(".p2-num")[playerTwoRandom].style.setProperty("display","flex");
+temp.push(document.querySelectorAll(".p1-num")[playerOneRandom])
+temp.push(document.querySelectorAll(".p2-num")[playerTwoRandom])
+document.querySelector(".start-btn").style.setProperty("display", "none");
+document.querySelector(".reset-btn").style.setProperty("display", "block");
 let theWinnerIs = document.querySelector(".header-title h1");
 if (playerOneRandom > playerTwoRandom){
     theWinnerIs.innerText = "ربح اللاعب الأول";
 }else if (playerOneRandom < playerTwoRandom){
     theWinnerIs.innerText = "ربح اللاعب الثاني";
 }else{
-    theWinnerIs.innerText = "ما أحد يزعل تعادل"
+    theWinnerIs.innerText = "ما أحد يزعل تعادل";
 }
+})
+
+document.querySelector(".reset-btn").addEventListener("click", function (){
+    console.log("We are inside the event")
+    if (temp.length !== 0){
+        temp[0].style.setProperty("display","none");
+        temp[1].style.setProperty("display","none");
+        document.querySelectorAll(".starter-mode")[0].style.setProperty("display","flex");
+        document.querySelectorAll(".starter-mode")[1].style.setProperty("display","flex");
+        document.querySelector(".start-btn").style.setProperty("display", "block");
+        document.querySelector(".reset-btn").style.setProperty("display", "none");
+        
+    }
+    temp = [];
+})
