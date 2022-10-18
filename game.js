@@ -34,7 +34,7 @@ document.querySelector(".reset-btn").addEventListener("click", function (){
         document.querySelectorAll(".starter-mode")[1].style.setProperty("display","flex");
         document.querySelector(".start-btn").style.setProperty("display", "block");
         document.querySelector(".reset-btn").style.setProperty("display", "none");
-        
+        document.querySelector(".header-title h1").innerText ="جرب حظك";
     }
     temp = [];
 })
