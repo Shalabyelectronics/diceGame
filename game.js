@@ -26,7 +26,6 @@ if (playerOneRandom > playerTwoRandom){
 })
 
 document.querySelector(".reset-btn").addEventListener("click", function (){
-    console.log("We are inside the event")
     if (temp.length !== 0){
         temp[0].style.setProperty("display","none");
         temp[1].style.setProperty("display","none");
